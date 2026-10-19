@@ -1,22 +1,22 @@
 class Tick < Formula
-  desc "Jira TUI dashboard for the terminal"
-  homepage "https://github.com/aeswibon/tick"
-  version "1.4.1"
+  desc "Fast, comprehensive CLI and MCP server for Atlassian (Jira and Confluence)"
+  homepage "https://github.com/abhiudayg/tick"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/aeswibon/tick/releases/download/v1.4.1/tick-aarch64-apple-darwin"
-      sha256 "9ec26418ad432f789367ba6cf683544e85186954c170e67047d4a7c697c31715"
+      url "https://github.com/abhiudayg/tick/releases/download/v2.0.0/tick-aarch64-apple-darwin"
+      sha256 "0cd2bb7506e49ba0d9ed15715ffeb7bb5696a068b3d15f8175c3a7e0beb875ad"
     else
-      url "https://github.com/aeswibon/tick/releases/download/v1.4.1/tick-x86_64-apple-darwin"
-      sha256 "d449c32a72272e325dd951a62230276339dbb5db167a8d46fb06f57965664393"
+      url "https://github.com/abhiudayg/tick/releases/download/v2.0.0/tick-x86_64-apple-darwin"
+      sha256 "a582958ec0c1a12d49c8835b952e7931561af96b0cda559defbb337e86141619"
     end
   end
 
   on_linux do
-    url "https://github.com/aeswibon/tick/releases/download/v1.4.1/tick-x86_64-unknown-linux-gnu"
-    sha256 "aafd35e5f7f4c64f6c9e02e730a8ea78512ef20b8a1a642d7b304b39bf60a1fc"
+    url "https://github.com/abhiudayg/tick/releases/download/v2.0.0/tick-x86_64-unknown-linux-gnu"
+    sha256 "031485e4d08427c6b61e55f397f66778541b5163d9a5fb7bb1001ee0750040fc"
   end
 
   def install
